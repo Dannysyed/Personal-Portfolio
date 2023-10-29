@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
         <html lang='en'>
             <body>
                 <div>
+
                     <Navbar />
                     {children}
                 </div>
