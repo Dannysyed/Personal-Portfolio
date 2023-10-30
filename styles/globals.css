@@ -38,21 +38,36 @@ h3 {
 }
 
 .primary_color {
-    /* background: #F0C27B;
-    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
-    background: linear-gradient(to right, #4B1248, #F0C27B); */
-    background: #0f0c29;
+    background: #A556F6;
+    background: -webkit-linear-gradient(to right, #A556F6, #935AF5);
+    background: linear-gradient(to right, #A556F6, #F0C27B);
+
+    /* background: #0f0c29;
 
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #F0C27B);
 
-    background: linear-gradient(to right, #24243e, #302b63, #F0C27B);
+    background: linear-gradient(to right, #24243e, #302b63, #F0C27B); */
 
 
 
 }
 
+.text_primary_color {
+    /* font-size: 72px; */
+    background: -webkit-linear-gradient(#A556F6, #F0C27B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text_primary {
+    font-size: 56px;
+    font-weight: 400;
+    font-family: Google Sans Regular;
+    line-height: normal;
+}
+
 .primary_button {
-    @apply bg-gradient-to-r from-violet-600 to-indigo-600
+    @apply h-full rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 px-4 text-white
 }
 
 

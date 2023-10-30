@@ -37,9 +37,9 @@ const Navbar = () => {
 
 
     return (
-        <div className='flex p-7 primary_color text-white  justify-around flex-col gap-7 text-center sm:flex-row'>
-            <div className='flex justify-between items-center'>
-                <h2 className='text-[1.3rem] sm:text-[0.9rem] md:text-[0.9rem] lg:text-[1.4rem]'><Link href={'/ '}><span>{"<"}</span><span className='augustine'>{" Daniyal Mahmood "}</span><span>{"/>"}</span></Link></h2>
+        <nav className='flex p-7 primary_color text-white  justify-around flex-col  text-center sm:flex-row gap-4 md:gap-12'>
+            <div className='flex justify-between items-center '>
+                <h2 className='text-[1.4rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.4rem]'><Link href={'/ '}><span>{"<"}</span><span className='augustine'>{" Daniyal Mahmood "}</span><span>{"/>"}</span></Link></h2>
                 {/* Mobile Navigation */}
                 {!isBread ?
                     <motion.div
@@ -77,10 +77,10 @@ const Navbar = () => {
             </div>
             {/* Desktop Navbar */}
             <div className='hidden sm:flex '>
-                <ul className="flex gap-5 flex-col items-center sm:flex-row sm:gap-3 md:gap-6">
+                <ul className="flex gap-5 flex-col items-center sm:flex-row sm:gap-4 md:gap-4 lg:gap-12">
                     {menuItems.map(({ href, title, icon }) => (
                         <li key={title}>
-                            <Link href={href} className={`text-white hover:text-slate-200 hover:bg-slate-700 cursor-pointer`}>
+                            <Link href={href} className={`text-white hover:text-slate-200 font-bold hover:bg-slate-700 cursor-pointer`}>
                                 {title}
                             </Link>
                         </li>
@@ -105,7 +105,7 @@ const Navbar = () => {
                 </div>
             }
 
-        </div >
+        </      nav>
     )
 }
 
