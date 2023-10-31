@@ -4,7 +4,7 @@ import { FiBatteryCharging, FiWifi } from "react-icons/fi";
 
 const Example = () => {
     return (
-        <section className="grid place-content-center bg-white p-12" style={{ width: "50vw" }}>
+        <section className="grid place-content-center  p-1" style={{ width: "20vw" }}>
             <FloatingPhone />
         </section>
     );
