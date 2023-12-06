@@ -13,10 +13,16 @@ import html from '../../public/assets/html.png'
 import sass from '../../public/assets/sass.png'
 import java from '../../public/assets/java.png'
 import Image from 'next/image';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CardProfile from '@components/CardProfile';
+import ShowCertificates from '@components/ShowCertificate';
+import About from '@components/AboutCode';
+import { Carousel } from 'react-responsive-carousel';
+import testimag from '../../public/assets/digitalMarketing.png'
 
 const HomePage = () => {
     let skill_images = [sass, python, js, node, css, html, java]
+    let Certificate = [sass, python, js, node]
     return (
         <main className='flex flex-col gap-10'>
             <section className=' flex flex-col p-7 md:h-[70vh]  justify-around sm:flex-row '>
@@ -31,13 +37,16 @@ const HomePage = () => {
                 </div>
             </section >
 
-            <section className=' flex flex-col p-9 md:h-[70vh] justify-center sm:flex-row '>
+            <section className='flex flex-col p-7 md:h-[70vh]  justify-around sm:flex-row '>
                 <div>
                     <CardProfile />
                 </div>
+                <div>
+                    <About />
+                </div>
             </section>
             <p className='text-5xl font-bold text-center'>What I <span className='text_primary_color'>Do</span>?</p>
-            <section className=' flex flex-col-reverse p-9 gap-24 sm:gap-20 md:gap-20 lg:gap-20 md:h-[70vh]  justify-around sm:flex-row'>
+            <section className='flex flex-col-reverse p-14 gap-24 sm:gap-20 md:gap-20 lg:gap-20 md:h-[70vh]  justify-around sm:flex-row'>
                 <div className='self-center '>
                     <Example />
                 </div>
@@ -50,8 +59,31 @@ const HomePage = () => {
                 </div>
             </section>
             <p className='text-5xl font-bold text-center text_primary_color'>Certificate</p>
-            <section className=' flex flex-col p-9 md:h-[70vh] justify-around sm:flex-row '>
+            <section className=''>
                 <div>
+                    <Carousel
+                        infiniteLoop={true}
+                        autoPlay={true}
+                        swipeable={false}
+                        interval={5000}
+                        showIndicators={true}
+                        showThumbs={false}
+                    >
+                        <ShowCertificates
+                            imgLink={testimag}
+                            logo={''}
+                            about="Responsive Web Design Certification"
+                            verifyLink={
+                                "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
+                            }
+                        />
+                        <ShowCertificates
+                            imgLink={testimag}
+                            logo={''}
+                            about="Intermediate JavaScript Certification"
+                            verifyLink={"https://www.hackerrank.com/certificates/9dc418ef7658"}
+                        />
+                    </Carousel>
 
                 </div>
                 <div></div>
