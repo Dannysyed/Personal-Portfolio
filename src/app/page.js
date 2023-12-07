@@ -18,7 +18,7 @@ import CardProfile from '@components/CardProfile';
 import ShowCertificates from '@components/ShowCertificate';
 import About from '@components/AboutCode';
 import { Carousel } from 'react-responsive-carousel';
-import testimag from '../../public/assets/digitalMarketing.png'
+import jsCertify from '../../public/assets/javascript_intermediate.jpg'
 
 const HomePage = () => {
     let skill_images = [sass, python, js, node, css, html, java]
@@ -70,7 +70,7 @@ const HomePage = () => {
                         showThumbs={false}
                     >
                         <ShowCertificates
-                            imgLink={testimag}
+                            imgLink={jsCertify}
                             logo={''}
                             about="Responsive Web Design Certification"
                             verifyLink={
@@ -78,10 +78,10 @@ const HomePage = () => {
                             }
                         />
                         <ShowCertificates
-                            imgLink={testimag}
+                            imgLink={jsCertify}
                             logo={''}
                             about="Intermediate JavaScript Certification"
-                            verifyLink={"https://www.hackerrank.com/certificates/9dc418ef7658"}
+                            verifyLink={"https://www.hackerrank.com/certificates/aee830176dfc"}
                         />
                     </Carousel>
 
