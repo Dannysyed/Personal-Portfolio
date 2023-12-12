@@ -19,6 +19,7 @@ import ShowCertificates from '@components/ShowCertificate';
 import About from '@components/AboutCode';
 import { Carousel } from 'react-responsive-carousel';
 import jsCertify from '../../public/assets/javascript_intermediate.jpg'
+import sqlCertify from '../../public/assets/sql_intermediate.jpg'
 
 const HomePage = () => {
     let skill_images = [sass, python, js, node, css, html, java]
@@ -45,19 +46,7 @@ const HomePage = () => {
                     <About />
                 </div>
             </section>
-            <p className='text-5xl font-bold text-center'>What I <span className='text_primary_color'>Do</span>?</p>
-            <section className='flex flex-col-reverse p-14 gap-24 sm:gap-20 md:gap-20 lg:gap-20 md:h-[70vh]  justify-around sm:flex-row'>
-                <div className='self-center '>
-                    <Example />
-                </div>
-                <div className='flex flex-col gap-4 '>
-                    <h3 className='text-4xl'>Full Stack + Mobile App Development</h3>
-                    <div className='gap-5 flex h-28 w-3/5  flex-wrap justify-center self-center '>
-                        {skill_images.map(val => <Image src={val} height={50} width={50} />
-                        )}
-                    </div>
-                </div>
-            </section>
+
             <p className='text-5xl font-bold text-center text_primary_color'>Certificate</p>
             <section className=''>
                 <div>
@@ -70,11 +59,11 @@ const HomePage = () => {
                         showThumbs={false}
                     >
                         <ShowCertificates
-                            imgLink={jsCertify}
+                            imgLink={sqlCertify}
                             logo={''}
-                            about="Responsive Web Design Certification"
+                            about="Sql JavaScript Certification"
                             verifyLink={
-                                "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
+                                "https://www.hackerrank.com/certificates/f09f02ef179e"
                             }
                         />
                         <ShowCertificates
@@ -87,6 +76,19 @@ const HomePage = () => {
 
                 </div>
                 <div></div>
+            </section>
+            <p className='text-5xl font-bold text-center'>What I <span className='text_primary_color'>Do</span>?</p>
+            <section className='flex flex-col-reverse p-14 gap-24 sm:gap-20 md:gap-20 lg:gap-20 md:h-[70vh]  justify-around sm:flex-row'>
+                <div className='self-center '>
+                    <Example />
+                </div>
+                <div className='flex flex-col gap-4 '>
+                    <h3 className='text-4xl'>Full Stack + Mobile App Development</h3>
+                    <div className='gap-5 flex h-28 w-3/5  flex-wrap justify-center self-center '>
+                        {skill_images.map(val => <Image src={val} height={50} width={50} />
+                        )}
+                    </div>
+                </div>
             </section>
         </main>
     )

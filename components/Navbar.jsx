@@ -22,7 +22,7 @@ const Navbar = () => {
             icon: <BeakerIcon className="h-4 w-4 mx-2" />,
         },
         {
-            href: "/contact",
+            href: "/projects",
             title: "Projects",
             icon: <BeakerIcon className="h-4 w-4 mx-2" />,
         },
